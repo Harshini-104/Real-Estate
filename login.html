@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href=""><img src="./image/logo.webp" alt="company logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./project.html">Properties</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <!-- <a href="./login.html"><button class="loginbtn">LogIn</button></a> -->
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        
+
+        <div class="auth-left">
+            <img src="./image/home4.webp" alt="Real Estate Image">
+            <h2>Find Your Dream Property</h2>
+            <p>Join us to explore premium residential and commercial properties with expert guidance.</p>
+        </div>
+
+
+        <div class="auth-right">
+
+
+            <div class="form-toggle">
+                <button class="active" id="login-tab">Login</button>
+                <button id="signup-tab">Sign Up</button>
+            </div>
+
+
+            <form id="login-form" class="auth-form">
+                <h3>Welcome Back</h3>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="done">Login</button>
+                <p class="switch-text">Don't have an account? <span id="switch-signup">Sign Up</span></p>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signup-form" class="auth-form hidden">
+                <h3>Create Account</h3>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="done">Sign Up</button>
+                <p class="switch-text">Already have an account? <span id="switch-login">Login</span></p>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const loginTab = document.getElementById('login-tab');
+        const signupTab = document.getElementById('signup-tab');
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+        const switchSignup = document.getElementById('switch-signup');
+        const switchLogin = document.getElementById('switch-login');
+
+        loginTab.addEventListener('click', () => {
+            loginTab.classList.add('active');
+            signupTab.classList.remove('active');
+            loginForm.classList.remove('hidden');
+            signupForm.classList.add('hidden');
+        });
+
+        signupTab.addEventListener('click', () => {
+            signupTab.classList.add('active');
+            loginTab.classList.remove('active');
+            signupForm.classList.remove('hidden');
+            loginForm.classList.add('hidden');
+        });
+
+        switchSignup.addEventListener('click', () => signupTab.click());
+        switchLogin.addEventListener('click', () => loginTab.click());
+    </script>
+
+</body>
+
+</html>

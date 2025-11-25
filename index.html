@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page1</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- header section -->
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <a href=""><img src="./image/logo.webp" alt="company logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Service</a></li>
+        <li><a href="./project.html">Properties</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <a href="./login.html"><button class="loginbtn">LogIn</button></a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <!--  hero section -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <section class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h1 class="fw-bold display-4">Find Your Dream Home</h1>
+      <p class="lead">Discover Premium Properties With Modern Amenities & Perfect Locations.</p>
+
+      <a href="#" class="btn btn-primary btn-lg mt-3 px-4 py-2">Explore Properties</a>
+    </div>
+  </section>
+
+  <!-- section about us -->
+<section class="about-company">
+    <div class="about-container">
+
+        <!-- Left Side: Content -->
+        <div class="about-content">
+            <h5 data-aos="zoom-in-right">ABOUT OUR REAL ESTATE AGENCY</h5>
+            <h2 data-aos="zoom-in-right">Connecting People With Their Dream Properties</h2>
+            <h3 data-aos="zoom-in-right"><span class="highlight">10+</span> Years of Trusted Real Estate Excellence</h3>
+            <p data-aos="zoom-in-right">
+                We are a leading real estate agency dedicated to helping families, investors, and businesses find the 
+                perfect property. With a decade of experience, we provide expert guidance in residential, commercial, 
+                and investment real estate. Our mission is to offer transparent services, personalized support, and 
+                a seamless buying and selling experience.
+            </p>
+            <ul class="about-points">
+                <li data-aos="zoom-in-right">✔ 1000+ Properties Successfully Sold</li>
+                <li data-aos="zoom-in-right">✔ Wide Range of Residential & Commercial Listings</li>
+                <li data-aos="zoom-in-right">✔ Experienced & Certified Real Estate Agents</li>
+                <li data-aos="zoom-in-right">✔ Reliable Market Insights & Property Valuation</li>
+            </ul>
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="about-image">
+            <img src="./image/real-estate.webp" alt="Real Estate Services" data-aos="flip-left">
+        </div>
+
+    </div>
+</section>
+
+
+
+  <!-- section why choose us -->
+
+  <section class="why-choose-us">
+    <div class="container">
+        <h2>Why Choose Us</h2>
+        <p class="intro">
+            At Our <strong> Real Estate Company</strong>, we combine expertise, trust, and dedication to help you find the
+            perfect property. Our team ensures a smooth and stress-free experience from start to finish.
+        </p>
+
+        <div class="features">
+            <div class="feature-box">
+                <h3>Trusted Experts</h3>
+                <p>Years of industry experience with a proven track record of successful deals.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Prime Listings</h3>
+                <p>Access to premium residential and commercial properties in top locations.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Transparent Process</h3>
+                <p>No hidden charges. Clear documentation and honest guidance at every step.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Personalized Support</h3>
+                <p>We tailor our services to match your lifestyle, preferences, and budget.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section slider -->
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<section class="luxury-slider-section">
+    <h2 class="luxury-title">Explore Our Luxury Homes</h2>
+
+    <div class="swiper luxurySwiper">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide luxury-slide">
+                <img src="./image/oceanvilla.webp" alt="Luxury Villa">
+                <div class="luxury-info">
+                    <h3>Modern Oceanfront Villa</h3>
+                    <p>₹4.5 Crores · 5 Beds · 4500 Sqft</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide luxury-slide">
+                <img src="./image/penthouse.webp" alt="Luxury Mansion">
+                <div class="luxury-info">
+                    <h3>Premium City Penthouse</h3>
+                    <p>₹6.8 Crores · 4 Beds · 3800 Sqft</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide luxury-slide">
+                <img src="./image/glof.webp" alt="Luxury House">
+                <div class="luxury-info">
+                    <h3>Elite Golf View Mansion</h3>
+                    <p>₹8.2 Crores · 6 Beds · 5200 Sqft</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide luxury-slide">
+                <img src="./image/compact.webp" alt="Luxury Villa">
+                <div class="luxury-info">
+                    <h3>Ultra Premium Smart Villa</h3>
+                    <p>₹7.0 Crores · 5 Beds · 5000 Sqft</p>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide luxury-slide">
+                <img src="./image/lake.view.webp" alt="Royal Estate">
+                <div class="luxury-info">
+                    <h3>Lake View Royal Estate</h3>
+                    <p>₹9.5 Crores · 7 Beds · 6000 Sqft</p>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="swiper-slide luxury-slide">
+                <img src="./image/family.apartment.webp" alt="Premium Residence">
+                <div class="luxury-info">
+                    <h3>Skyline Duplex Residence</h3>
+                    <p>₹5.5 Crores · 3 Beds · 3200 Sqft</p>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="swiper-slide luxury-slide">
+                <img src="./image/forest.webp" alt="Exclusive Villa">
+                <div class="luxury-info">
+                    <h3>Exclusive Forest View Villa</h3>
+                    <p>₹6.3 Crores · 4 Beds · 4000 Sqft</p>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".luxurySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 }
+        }
+    });
+</script>
+
+
+<!-- section properties details -->
+
+<section class="latest-rent">
+    <h2 class="rent-title">Latest Properties for Rent</h2>
+
+    <div class="rent-grid">
+
+        <!-- 1 -->
+        <div class="rent-card">
+            <div class="rent-img">
+                <img src="./image/modern-apartment.webp" alt="">
+                <span class="rent-tag">₹25,000 / month</span>
+            </div>
+            <div class="rent-info">
+                <h3>2 BHK Modern Apartment</h3>
+                <p class="rent-location"><i class="fa-solid fa-location-dot"></i> Anna Nagar, Chennai</p>
+                <ul class="rent-features">
+                    <li>2 Beds</li>
+                    <li>2 Baths</li>
+                    <li>1000 sq.ft</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="rent-card">
+            <div class="rent-img">
+                <img src="./image/family-villa.webp" alt="">
+                <span class="rent-tag">₹45,000 / month</span>
+            </div>
+            <div class="rent-info">
+                <h3>Premium Family Villa</h3>
+                <p class="rent-location"><i class="fa-solid fa-location-dot"></i> HSR Layout, Bangalore</p>
+                <ul class="rent-features">
+                    <li>3 Beds</li>
+                    <li>3 Baths</li>
+                    <li>1800 sq.ft</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="rent-card">
+            <div class="rent-img">
+                <img src="./image/studio-apartment.webp" alt="">
+                <span class="rent-tag">₹15,000 / month</span>
+            </div>
+            <div class="rent-info">
+                <h3>Cozy Studio Apartment</h3>
+                <p class="rent-location"><i class="fa-solid fa-location-dot"></i> Gachibowli, Hyderabad</p>
+                <ul class="rent-features">
+                    <li>1 Bed</li>
+                    <li>1 Bath</li>
+                    <li>550 sq.ft</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="rent-card">
+            <div class="rent-img">
+                <img src="./image/commercial.shop.webp" alt="">
+                <span class="rent-tag">₹60,000 / month</span>
+            </div>
+            <div class="rent-info">
+                <h3>Commercial Shop</h3>
+                <p class="rent-location"><i class="fa-solid fa-location-dot"></i> Koregaon Park, Pune</p>
+                <ul class="rent-features">
+                    <li>600 sq.ft</li>
+                    <li>Premium Area</li>
+                    <li>Parking</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="rent-card">
+            <div class="rent-img">
+                <img src="./image/apartment.webp" alt="">
+                <span class="rent-tag">₹32,000 / month</span>
+            </div>
+            <div class="rent-info">
+                <h3>Luxury High-Rise Apartment</h3>
+                <p class="rent-location"><i class="fa-solid fa-location-dot"></i> Banjara Hills, Hyderabad</p>
+                <ul class="rent-features">
+                    <li>2 Beds</li>
+                    <li>2 Baths</li>
+                    <li>1250 sq.ft</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="rent-card">
+            <div class="rent-img">
+                <img src="./image/compact.webp" alt="">
+                <span class="rent-tag">₹20,000 / month</span>
+            </div>
+            <div class="rent-info">
+                <h3>1 BHK Compact Home</h3>
+                <p class="rent-location"><i class="fa-solid fa-location-dot"></i> Whitefield, Bangalore</p>
+                <ul class="rent-features">
+                    <li>1 Bed</li>
+                    <li>1 Bath</li>
+                    <li>650 sq.ft</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="rent-card">
+            <div class="rent-img">
+                <img src="./image/furnished duplex.webp" alt="">
+                <span class="rent-tag">₹50,000 / month</span>
+            </div>
+            <div class="rent-info">
+                <h3>Fully Furnished Duplex</h3>
+                <p class="rent-location"><i class="fa-solid fa-location-dot"></i> Powai, Mumbai</p>
+                <ul class="rent-features">
+                    <li>3 Beds</li>
+                    <li>3 Baths</li>
+                    <li>1600 sq.ft</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="rent-card">
+            <div class="rent-img">
+                <img src="./image/family.apartment.webp" alt="">
+                <span class="rent-tag">₹28,000 / month</span>
+            </div>
+            <div class="rent-info">
+                <h3>Elegant Family Apartment</h3>
+                <p class="rent-location"><i class="fa-solid fa-location-dot"></i> Velachery, Chennai</p>
+                <ul class="rent-features">
+                    <li>2 Beds</li>
+                    <li>2 Baths</li>
+                    <li>1100 sq.ft</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- section statistics -->
+<section class="statistics-section" id="statsSection">
+    <div class="stats-container">
+
+        <div class="stat-box">
+            <h2 class="count" data-target="1500">0</h2>
+            <p>Properties Listed</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="count" data-target="850">0</h2>
+            <p>Properties Sold</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="count" data-target="1200">0</h2>
+            <p>Happy Clients</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="count" data-target="25">0</h2>
+            <p>Years of Experience</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- section properties -->
+
+<section class="latest-properties">
+  <div class="container">
+    <h2 class="section-title">Latest Properties</h2>
+    <div class="properties-grid">
+      <div class="property-card">
+        <img class="property-image" src="./image/home5.webp" alt="Property 1">
+        <div class="property-info">
+          <h3 class="property-title">Modern Family Home</h3>
+          <p class="property-location">Salem, Tamil Nadu</p>
+          <p class="property-details">4 bed • 3 bath • 2,400 sq ft</p>
+          <a class="btn-details" href="#">View Details</a>
+        </div>
+      </div>
+
+      <div class="property-card">
+        <img class="property-image" src="./image/home4.webp" alt="Property 2">
+        <div class="property-info">
+          <h3 class="property-title">Luxury Villa with Pool</h3>
+          <p class="property-location">Coimbatore, Tamil Nadu</p>
+          <p class="property-details">5 bed • 4 bath • 3,500 sq ft</p>
+          <a class="btn-details" href="#">View Details</a>
+        </div>
+      </div>
+
+      <div class="property-card">
+        <img class="property-image" src="./image/eco-friendly.webp" alt="Property 3">
+        <div class="property-info">
+          <h3 class="property-title">Eco-Friendly Apartment</h3>
+          <p class="property-location">Chennai, Tamil Nadu</p>
+          <p class="property-details">3 bed • 2 bath • 1,600 sq ft</p>
+          <a class="btn-details" href="#">View Details</a>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- section agent -->
+
+<section class="agent-section">
+    <div class="container">
+        <h2>Meet Our Agents</h2>
+
+        <div class="agent-grid">
+
+            <!-- Agent 1 -->
+            <div class="agent-card">
+                <div class="agent-image">
+                    <img src="./image/team1.webp" alt="Agent 1">
+                    <div class="social-icons">
+                        <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                        <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <h3>Harish Kumar</h3>
+                <p>Senior Property Consultant</p>
+            </div>
+
+            <!-- Agent 2 -->
+            <div class="agent-card">
+                <div class="agent-image">
+                    <img src="./image/team6.webp" alt="Agent 2">
+                    <div class="social-icons">
+                        <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                        <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <h3>Anitha Raj</h3>
+                <p>Real Estate Advisor</p>
+            </div>
+
+            <!-- Agent 3 -->
+            <div class="agent-card">
+                <div class="agent-image">
+                    <img src="./image/team3.webp" alt="Agent 3">
+                    <div class="social-icons">
+                        <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                        <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <h3>Ravi Shankar</h3>
+                <p>Luxury Property Expert</p>
+            </div>
+
+            <!-- Agent 4 -->
+            <div class="agent-card">
+                <div class="agent-image">
+                    <img src="./image/team4.webp" alt="Agent 4">
+                    <div class="social-icons">
+                        <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                        <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <h3>Priya Dharshini</h3>
+                <p>Client Relationship Manager</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- footer section -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Company About -->
+        <div class="footer-about">
+            <img src="./image/logo.webp" alt="Real Estate Logo" class="comlogo">
+            <p>
+                Your trusted real estate partner for luxury homes, commercial spaces, and prime property
+                investments. We help you find the perfect property with transparency and expert guidance.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./properties.html">Properties</a></li>
+                <li><a href="./agents.html">Agents</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-support">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="./buy.html">Buy Property</a></li>
+                <li><a href="./rent.html">Rent Property</a></li>
+                <li><a href="./sell.html">Sell Property</a></li>
+                <li><a href="./valuation.html">Property Valuation</a></li>
+                <li><a href="./consultation.html">Consultation</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><strong>Email:</strong> info@Stacklyrealestate.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Address:</strong> 21 Prime Residency Road, Salem, India</p>
+
+            <div class="social-icon">
+                <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Real Estate Hub. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<script>
+   
+    const counters = document.querySelectorAll('.count');
+    let started = false; // To run animation only once
+
+    const startCounting = () => {
+        counters.forEach(counter => {
+            counter.innerText = '0';
+            const target = +counter.getAttribute('data-target');
+
+            const updateCounter = () => {
+                const current = +counter.innerText;
+                const increment = target / 200;
+
+                if (current < target) {
+                    counter.innerText = `${Math.ceil(current + increment)}`;
+                    setTimeout(updateCounter, 10);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            updateCounter();
+        });
+    };
+
+    // Scroll Trigger
+    const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting && !started) {
+            startCounting();
+            started = true;
+        }
+    });
+
+    observer.observe(document.querySelector("#statsSection"));
+</script>
+</script>
+
+
+
+
+
+
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    }
+  </script>
+
+
+</body>
+
+</html>

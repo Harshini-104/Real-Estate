@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- header section -->
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <a href=""><img src="./image/logo.webp" alt="company logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Service</a></li>
+        <li><a href="./project.html">Properties</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <a href="./login.html"><button class="loginbtn">LogIn</button></a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+  </header>
+
+
+  <div class="site">
+    <aside class="sidebar">
+
+      <!-- Categories -->
+      <div class="widget categories">
+        <h4 class="widget-title">Categories</h4>
+        <ul>
+          <li><a href="#">Residential <span class="count">14</span></a></li>
+          <li><a href="#">Commercial <span class="count">18</span></a></li>
+          <li><a href="#">Luxury Villas <span class="count">4</span></a></li>
+          <li><a href="#">Rental Properties <span class="count">9</span></a></li>
+          <li><a href="#">Property Investment <span class="count">23</span></a></li>
+          <li><a href="#">Real Estate Tips <span class="count">15</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Recent Posts -->
+      <div class="widget recent">
+        <h4 class="widget-title">Recent posts</h4>
+        <ul class="recent-list">
+          <li>
+            <img src="./image/compact.webp" alt="">
+            <div>
+              <a href="#">Top 5 Residential Projects in 2025</a>
+              <time>Nov 15, 2025</time>
+            </div>
+          </li>
+          <li>
+            <img src="./image/family-villa.webp" alt="">
+            <div>
+              <a href="#">How to Choose the Perfect Commercial Space</a>
+              <time>Nov 10, 2025</time>
+            </div>
+          </li>
+          <li>
+            <img src="./image/forest.webp" alt="">
+            <div>
+              <a href="#">Investing in Luxury Villas: What to Know</a>
+              <time>Nov 05, 2025</time>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tags -->
+      <div class="widget tags">
+        <h4 class="widget-title">Tags</h4>
+        <div class="tag-cloud">
+          <a href="#">#Residential</a>
+          <a href="#">#Commercial</a>
+          <a href="#">#LuxuryVillas</a>
+          <a href="#">#Rental</a>
+          <a href="#">#Investment</a>
+          <a href="#">#PropertyTips</a>
+          <a href="#">#RealEstateNews</a>
+          <a href="#">#HomeDecor</a>
+          <a href="#">#PropertyMarket</a>
+          <a href="#">#Realty</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="posts-grid">
+
+        <!-- Post 1 -->
+        <article class="post">
+          <figure class="thumb">
+            <img src="./image/glof.webp" alt="">
+            <figcaption class="date">15 Nov, 2025</figcaption>
+          </figure>
+          <h3 class="post-title"><a href="#">Top 5 Residential Projects in 2025</a></h3>
+          <p class="excerpt">Explore the best residential projects this year offering modern amenities, prime locations,
+            and value for money.</p>
+          <a class="read-more" href="#">Read more</a>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="post">
+          <figure class="thumb">
+            <img src="./image/luxury-villa.webp" alt="">
+            <figcaption class="date">10 Nov, 2025</figcaption>
+          </figure>
+          <h3 class="post-title"><a href="#">How to Choose the Perfect Commercial Space</a></h3>
+          <p class="excerpt">Learn tips for selecting a commercial property that boosts your business potential and
+            investment value.</p>
+          <a class="read-more" href="#">Read more</a>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="post">
+          <figure class="thumb">
+            <img src="./image/oceanvilla.webp" alt="">
+            <figcaption class="date">05 Nov, 2025</figcaption>
+          </figure>
+          <h3 class="post-title"><a href="#">Investing in Luxury Villas: What to Know</a></h3>
+          <p class="excerpt">A complete guide to luxury villa investment including location, budget, and ROI
+            considerations.</p>
+          <a class="read-more" href="#">Read more</a>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="post">
+          <figure class="thumb">
+            <img src="./image/studio-apartment.webp" alt="">
+            <figcaption class="date">01 Nov, 2025</figcaption>
+          </figure>
+          <h3 class="post-title"><a href="#">Rental Properties: Maximizing Your Returns</a></h3>
+          <p class="excerpt">Tips for landlords and investors to get the most out of rental properties in a competitive
+            market.</p>
+          <a class="read-more" href="#">Read more</a>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="post">
+          <figure class="thumb">
+            <img src="./image/lake.view.webp" alt="">
+            <figcaption class="date">28 Oct, 2025</figcaption>
+          </figure>
+          <h3 class="post-title"><a href="#">Sustainable Real Estate Developments</a></h3>
+          <p class="excerpt">Discover eco-friendly housing and commercial projects that combine sustainability with
+            modern design.</p>
+          <a class="read-more" href="#">Read more</a>
+        </article>
+
+        <!-- Post 6 -->
+        <article class="post">
+          <figure class="thumb">
+            <img src="./image/modern-apartment.webp" alt="">
+            <figcaption class="date">25 Oct, 2025</figcaption>
+          </figure>
+          <h3 class="post-title"><a href="#">Top Property Investment Tips for 2025</a></h3>
+          <p class="excerpt">Expert advice for making smart property investments in the current real estate market.</p>
+          <a class="read-more" href="#">Read more</a>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .header {
+      width: 100%;
+      background: #0d1625;
+      padding: 15px 5%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 200;
+      height: 80px;
+    }
+
+
+    .header nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+    .logo img {
+      width: 150px;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #00aaff;
+    }
+
+
+    .loginbtn {
+      background: #007bff;
+      border: none;
+      padding: 3px 18px;
+      color: #fff;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .loginbtn:hover {
+      background: #005fcc;
+      transform: scale(1.05);
+    }
+
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+
+    @media (max-width: 768px) {
+
+      .menu-icon {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: -550px;
+        left: 0;
+        width: 100%;
+        background: #0d1625;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 0 30px 0;
+        transition: 0.4s ease;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .nav-links.active {
+        top: 60px;
+      }
+
+      .nav-links li a {
+        font-size: 18px;
+      }
+
+      .loginbtn {
+        font-size: 18px;
+        padding: 10px 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo img {
+        width: 130px;
+      }
+
+      .nav-links li a {
+        font-size: 17px;
+      }
+    }
+
+
+    .site {
+      max-width: 1180px;
+      margin: 24px auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 28px;
+      padding: 95px 16px;
+
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      padding-top: 2px;
+    }
+
+    .widget {
+      background: transparent;
+      margin-bottom: 20px;
+    }
+
+    .widget-title {
+      font-size: 14px;
+      margin: 0 0 12px;
+      color: #111;
+      font-weight: 700;
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #9aa0a6;
+      margin-top: 8px;
+    }
+
+    /* categories */
+    .categories ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .categories a {
+      color: #6c6f72;
+      text-decoration: none;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .count {
+      color: #999;
+      font-size: 13px;
+      margin-left: 8px;
+    }
+
+    /* recent posts */
+    .recent-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .recent-list li {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .recent-list img {
+      width: 56px;
+      height: 44px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    .recent-list a {
+      display: block;
+      color: #111;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .recent-list time {
+      display: block;
+      font-size: 12px;
+      color: #9aa0a6;
+    }
+
+    /* tags */
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .tag-cloud a {
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      color: #666;
+      text-decoration: none;
+    }
+
+    /* MAIN CONTENT: posts grid */
+    .content {
+      padding-top: 0;
+    }
+
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    /* individual post */
+    .post {
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(12, 20, 30, 0.04);
+      padding-bottom: 16px;
+    }
+
+    .thumb {
+      position: relative;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .thumb img {
+      width: 100%;
+      display: block;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .date {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      background: #0b6b63;
+      color: #fff;
+      padding: 6px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    .post-title {
+      font-size: 16px;
+      margin: 14px 16px 8px;
+    }
+
+    .post-title a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .excerpt {
+      margin: 0 16px 12px;
+      color: #6b6f73;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin: 0 16px;
+      color: #0b6b63;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .read-more:hover {
+      border-bottom-color: #0b6b63;
+    }
+
+    /* responsive */
+    @media (max-width: 980px) {
+      .site {
+        grid-template-columns: 1fr;
+      }
+
+      .posts-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sidebar {
+        order: 2;
+      }
+
+      .content {
+        order: 1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .posts-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .thumb img {
+        height: 180px;
+      }
+
+      .site {
+        padding: 0 12px;
+      }
+    }
+  </style>
+</body>
+
+</html>
