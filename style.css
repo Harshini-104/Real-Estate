@@ -459,7 +459,7 @@
 
 .agent-section {
     padding: 60px 20px;
-    background: #fafafa;
+    background: linear-gradient(135deg, rgb(237, 242, 104),aqua, rgb(237, 242, 104));
     font-family: Arial, sans-serif;
 }
 
@@ -483,7 +483,7 @@
 
 .agent-card {
     text-align: center;
-    background: #ffffff;
+    background: linear-gradient(135deg, pink, aqua);
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -562,7 +562,7 @@
 /* section about us */
 
 .about-company {
-  background: url("./image/pink.png") no-repeat center center/cover;
+  background: url("./image/commit.webp") no-repeat center center/cover;
   background-attachment: fixed;
   padding: 100px 8%;
   font-family: 'Poppins', sans-serif;
@@ -741,7 +741,8 @@
 
 .latest-rent {
     padding: 70px 7%;
-    background: #f9f9f9;
+    background: url("./image/bg-energy.avif") no-repeat center center/cover;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -749,7 +750,7 @@
     text-align: center;
     font-size: 32px;
     font-weight: 700;
-    color: #1e2a47;
+    color: #ffffff;
     margin-bottom: 40px;
 }
 
@@ -760,7 +761,7 @@
 }
 
 .rent-card {
-    background: #fff;
+    background: linear-gradient(135deg, aqua, white);
     border-radius: 12px;
     box-shadow: 0 4px 18px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -945,7 +946,7 @@
 }
 
 
-/* footer section */
+
 
 /* Footer Section */
 .footer {

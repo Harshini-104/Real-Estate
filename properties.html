@@ -10,6 +10,22 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
     <!-- header section -->
@@ -59,7 +75,7 @@
     <div class="property-card-container" id="propertyCardContainer">
 
         <!-- CARD 1 -->
-        <div class="property-card" data-title="Luxury 3BHK Apartment" data-location="Coimbatore">
+        <div class="property-card" data-title="Luxury 3BHK Apartment" data-location="Coimbatore" data-aos="zoom-in">
             <img src="./image/apartment.webp" alt="">
             <h3>Luxury 3BHK Apartment</h3>
             <p class="location"><i class="fa-solid fa-location-dot"></i> Coimbatore</p>
@@ -67,15 +83,15 @@
         </div>
 
         <!-- CARD 2 -->
-        <div class="property-card" data-title="Premium 2BHK Flat" data-location="Chennai">
-            <img src="./image/commercial.shop.webp" alt="">
+        <div class="property-card" data-title="Premium 2BHK Flat" data-location="Chennai" data-aos="zoom-in">
+            <img src="./image/furnished duplex.webp" alt="">
             <h3>Premium 2BHK Flat</h3>
             <p class="location"><i class="fa-solid fa-location-dot"></i> Chennai</p>
             <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 62,00,000</p>
         </div>
 
         <!-- CARD 3 -->
-        <div class="property-card" data-title="4BHK Gated Villa" data-location="ECR Chennai">
+        <div class="property-card" data-title="4BHK Gated Villa" data-location="ECR Chennai" data-aos="zoom-in">
             <img src="./image/eco-friendly.webp" alt="">
             <h3>4BHK Gated Villa</h3>
             <p class="location"><i class="fa-solid fa-location-dot"></i> ECR Chennai</p>
@@ -83,7 +99,7 @@
         </div>
 
         <!-- CARD 4 -->
-        <div class="property-card" data-title="Compact Studio Apartment" data-location="Bangalore">
+        <div class="property-card" data-title="Compact Studio Apartment" data-location="Bangalore" data-aos="zoom-in">
             <img src="./image/family.apartment.webp" alt="">
             <h3>Compact Studio Apartment</h3>
             <p class="location"><i class="fa-solid fa-location-dot"></i> Bangalore</p>
@@ -91,7 +107,7 @@
         </div>
 
         <!-- CARD 5 -->
-        <div class="property-card" data-title="Modern 3BHK Townhouse" data-location="Hyderabad">
+        <div class="property-card" data-title="Modern 3BHK Townhouse" data-location="Hyderabad" data-aos="zoom-in">
             <img src="./image/forest.webp" alt="">
             <h3>Modern 3BHK Townhouse</h3>
             <p class="location"><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
@@ -99,7 +115,7 @@
         </div>
 
         <!-- CARD 6 -->
-        <div class="property-card" data-title="Luxury Penthouse" data-location="Mumbai">
+        <div class="property-card" data-title="Luxury Penthouse" data-location="Mumbai" data-aos="zoom-in">
             <img src="./image/glof.webp" alt="">
             <h3>Luxury Penthouse</h3>
             <p class="location"><i class="fa-solid fa-location-dot"></i> Mumbai</p>
@@ -107,7 +123,7 @@
         </div>
 
         <!-- CARD 7 -->
-        <div class="property-card" data-title="Beachside Villa" data-location="Goa">
+        <div class="property-card" data-title="Beachside Villa" data-location="Goa" data-aos="zoom-in">
             <img src="./image/home2.webp" alt="">
             <h3>Beachside Villa</h3>
             <p class="location"><i class="fa-solid fa-location-dot"></i> Goa</p>
@@ -115,7 +131,7 @@
         </div>
 
         <!-- CARD 8 -->
-        <div class="property-card" data-title="Budget 1BHK Flat" data-location="Madurai">
+        <div class="property-card" data-title="Budget 1BHK Flat" data-location="Madurai" data-aos="zoom-in">
             <img src="./image/home3.webp" alt="">
             <h3>Budget 1BHK Flat</h3>
             <p class="location"><i class="fa-solid fa-location-dot"></i> Madurai</p>
@@ -146,14 +162,14 @@ function filterProperties() {
 </script>
 
 
-  
+  <!-- section properties -->
 
   
-    <section class="property-section">
+    <section class="property-section" id="details">
     <div class="property-container">
 
         <!-- LEFT SIDE -->
-        <div class="property-left">
+        <div class="property-left" data-aos="zoom-in">
             <!-- Main Image -->
             <div class="main-image">
                 <img id="mainDisplay" src="./image/apartment.webp" alt="Property">
@@ -161,15 +177,16 @@ function filterProperties() {
 
             <!-- Thumbnail Gallery -->
             <div class="thumbnail-gallery">
-                <img src="./image/compact.webp" onclick="changeImage(this.src)" alt="">
-                <img src="./image/family.apartment.webp" onclick="changeImage(this.src)" alt="">
-                <img src="./image/glof.webp" onclick="changeImage(this.src)" alt="">
-                <img src="./image/home1.webp" onclick="changeImage(this.src)" alt="">
+                <img src="./image/apart1.webp" onclick="changeImage(this.src)" alt="Apartment Photos">
+                <img src="./image/apart2.webp" onclick="changeImage(this.src)" alt="Apartment Photos">
+                <img src="./image/apart3.webp" onclick="changeImage(this.src)" alt="Apartment Photos">
+                <img src="./image/apart4.webp" onclick="changeImage(this.src)" alt="Apartment Photos">
+                <img src="./image/apart5.webp" onclick="changeImage(this.src)" alt="Apartment Photos">
             </div>
         </div>
 
         <!-- RIGHT SIDE -->
-        <div class="property-right">
+        <div class="property-right" data-aos="zoom-in">
             <h2 class="property-title">Luxury 3BHK Apartment</h2>
 
             <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 85,00,000</p>
@@ -197,7 +214,7 @@ function filterProperties() {
                 <li><i class="fa-solid fa-check"></i> 24/7 Security</li>
             </ul>
 
-            <button class="contact-btn">Contact Agent</button>
+            <a href="./error.html"><button class="contact-btn">Contact Agent</button></a>
         </div>
     </div>
 </section>
@@ -208,12 +225,12 @@ function filterProperties() {
     <div class="property-container reverse">
 
         <!-- LEFT SIDE (DETAILS) -->
-        <div class="property-right">
-            <h2 class="property-title">Luxury 3BHK Apartment</h2>
+        <div class="property-right" data-aos="zoom-in">
+            <h2 class="property-title">Luxury Beach Villa</h2>
 
             <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 85,00,000</p>
 
-            <p class="location"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Goa, Tamil Nadu</p>
 
             <p class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -236,22 +253,24 @@ function filterProperties() {
                 <li><i class="fa-solid fa-check"></i> 24/7 Security</li>
             </ul>
 
-            <button class="contact-btn">Contact Agent</button>
+            <a href="./error.html"><button class="contact-btn">Contact Agent</button></a>
         </div>
 
         <!-- RIGHT SIDE (IMAGES) -->
-        <div class="property-left">
+        <div class="property-left" data-aos="zoom-in"> 
             <!-- Main Image -->
             <div class="main-image">
-                <img id="mainDisplayRight" src="./image/apartment.webp" alt="Property">
+                <img id="mainDisplayRight" src="./image/oceanvilla.webp" alt="Property">
             </div>
 
             <!-- Thumbnail Gallery -->
             <div class="thumbnail-gallery">
-                <img src="./image/compact.webp" onclick="changeImageRight(this.src)" alt="">
-                <img src="./image/home2.webp" onclick="changeImageRight(this.src)" alt="">
-                <img src="./image/home3.webp" onclick="changeImageRight(this.src)" alt="">
-                <img src="./image/home4.webp" onclick="changeImageRight(this.src)" alt="">
+                <img src="./image/beach1.webp" onclick="changeImageRight(this.src)" alt="Beach villa">
+                <img src="./image/beach2.webp" onclick="changeImageRight(this.src)" alt="Beach Villa">
+                <img src="./image/beach3.webp" onclick="changeImageRight(this.src)" alt="Beach Villa">
+                <img src="./image/beach4.webp" onclick="changeImageRight(this.src)" alt="Beach villa">
+                <img src="./image/beach5.webp" onclick="changeImageRight(this.src)" alt="Beach Villa">
+                
             </div>
         </div>
 
@@ -269,23 +288,25 @@ function filterProperties() {
     <div class="property-container">
 
         <!-- LEFT -->
-        <div class="property-left">
+        <div class="property-left" data-aos="zoom-in">
             <!-- Main Image -->
             <div class="main-image">
-                <img id="mainDisplay2" src="./image/apartment.webp" alt="Luxury Villa">
+                <img id="mainDisplay2" src="./image/luxury-villa.webp" alt="Luxury Villa">
             </div>
 
             <!-- Thumbnails -->
             <div class="thumbnail-gallery">
-                <img src="./image/eco-friendly.webp" onclick="changeImage2(this.src)" alt="">
-                <img src="./image/furnished duplex.webp" onclick="changeImage2(this.src)" alt="">
-                <img src="./image/home1.webp" onclick="changeImage2(this.src)" alt="">
-                <img src="./image/family-villa.webp" onclick="changeImage2(this.src)" alt="">
+                <img src="./image/villa1.webp" onclick="changeImage2(this.src)" alt="villa images">
+                <img src="./image/villa2.webp" onclick="changeImage2(this.src)" alt="villa images">
+                <img src="./image/villa3.webp" onclick="changeImage2(this.src)" alt="villa images">
+                <img src="./image/villa4.webp" onclick="changeImage2(this.src)" alt="villa images">
+                <img src="./image/villa5.webp" onclick="changeImage2(this.src)" alt="villa images">
+
             </div>
         </div>
 
         <!-- RIGHT -->
-        <div class="property-right">
+        <div class="property-right" data-aos="zoom-in">
             <h2 class="property-title">Premium 4BHK Gated Villa</h2>
 
             <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 1,65,00,000</p>
@@ -308,15 +329,13 @@ function filterProperties() {
             </p>
 
             <ul class="features">
-                <li><i class="fa-solid fa-check"></i> 4 Bedrooms + Private Balcony</li>
                 <li><i class="fa-solid fa-check"></i> Home Theater Room</li>
                 <li><i class="fa-solid fa-check"></i> Private Garden Area</li>
                 <li><i class="fa-solid fa-check"></i> Smart Home Automation</li>
-                <li><i class="fa-solid fa-check"></i> 24/7 CCTV & Security</li>
                 <li><i class="fa-solid fa-check"></i> 2 Covered Car Parking</li>
             </ul>
 
-            <button class="contact-btn">Schedule a Visit</button>
+            <a href="./error.html"><button class="contact-btn">Contact Agent</button></a>
         </div>
     </div>
 </section>
@@ -331,7 +350,7 @@ function filterProperties() {
     <div class="property-container reverse">
 
         <!-- LEFT SIDE (DETAILS) -->
-        <div class="property-right">
+        <div class="property-right" data-aos="zoom-in">
             <h2 class="property-title">Premium 2BHK City View Apartment</h2>
 
             <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 62,00,000</p>
@@ -361,11 +380,11 @@ function filterProperties() {
                 <li><i class="fa-solid fa-check"></i> 24/7 Power Backup</li>
             </ul>
 
-            <button class="contact-btn">Enquire Now</button>
+            <a href="./error.html"><button class="contact-btn">Contact Agent</button></a>
         </div>
 
         <!-- RIGHT SIDE (IMAGES) -->
-        <div class="property-left">
+        <div class="property-left" data-aos="zoom-in">
             <!-- Main Image -->
             <div class="main-image">
                 <img id="mainDisplayNew" src="./image/studio-apartment.webp" alt="Property">
@@ -373,15 +392,76 @@ function filterProperties() {
 
             <!-- Thumbnail Gallery -->
             <div class="thumbnail-gallery">
-                <img src="./image/penthouse.webp" onclick="changeImageNew(this.src)" alt="">
-                <img src="./image/oceanvilla.webp" onclick="changeImageNew(this.src)" alt="">
-                <img src="./image/family-villa.webp" onclick="changeImageNew(this.src)" alt="">
-                <img src="./image/luxury-villa.webp" onclick="changeImageNew(this.src)" alt="">
+                <img src="./image/furnished duplex.webp" onclick="changeImageNew(this.src)" alt="Villa Image">
+                <img src="./image/apart6.webp" onclick="changeImageNew(this.src)" alt="Villa Image">
+                <img src="./image/apart3.webp" onclick="changeImageNew(this.src)" alt="Villa Image">
+                <img src="./image/family.apartment.webp" onclick="changeImageNew(this.src)" alt="Villa Image">
+                <img src="./image/apart2.webp" onclick="changeImageNew(this.src)" alt="Villa Image">
             </div>
         </div>
 
     </div>
 </section>
+
+<!-- footer section -->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Company About -->
+            <div class="footer-about">
+                <img src="./image/logo.webp" alt="Real Estate Logo" class="comlogo">
+                <p>
+                    Your trusted real estate partner for luxury homes, commercial spaces, and prime property
+                    investments. We help you find the perfect property with transparency and expert guidance.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./properties.html">Properties</a></li>
+                    <li><a href="./index.html#agent">Agents</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="footer-support">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="./index.html#property">Properties</a></li>
+                    <li><a href="./service.html#categories">Categories</a></li>
+                    <li><a href="./service.html#process">Process</a></li>
+                    <li><a href="./properties.html#details">Property Details</a></li>
+                    <li><a href="./about.html#who">Who We Are</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> info@Stacklyrealestate.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Address:</strong> 21 Prime Residency Road, Salem, India</p>
+
+                <div class="social-icon">
+                    <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                    <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Stackly Real Estate. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 
 <script>
     function changeImageNew(src) {
@@ -401,6 +481,16 @@ function filterProperties() {
         function toggleMenu() {
             document.querySelector(".nav-links").classList.toggle("active");
         }
+    </script>
+
+    <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
     </script>
 
 </body>
