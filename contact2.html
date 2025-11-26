@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./contact2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href=""><img src="./image/logo.webp" alt="company logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./home2.html">Home</a></li>
+                <li><a href="./about2.html">About</a></li>
+                <li><a href="./service2.html">Service</a></li>
+                <li><a href="./properties2.html">Properties</a></li>
+                <li><a href="./blog2.html">Blog</a></li>
+                <li><a href="./dashboard2.html">Dashboard</a></li>
+                <li><a href="./contact.html2">Contact</a></li>
+                <a href="./login.html"><button class="loginbtn">LogIn</button></a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!-- section main -->
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1>Get in Touch with Us</h1>
+            <p>Our team is here to help you find your dream property. Reach out for inquiries, consultations, or
+                support.</p>
+
+        </div>
+    </section>
+
+    <!-- section form -->
+
+
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <!-- Left Side: Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>21 Prime Residency Road, Salem, <br>India</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4>Open Hours</h4>
+                        <p>Monday-Saturday: 9:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@Stacklyrealestate.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Call</h4>
+                        <p>+91 9876543210<br>+91 9047366578</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form">
+                <form>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section FAQ -->
+
+    <section class="faq-section">
+        <div class="faq-container">
+
+            <h2 class="faq-title" data-aos="fade-up">Frequently Asked Questions</h2>
+            <p class="faq-subtitle" data-aos="fade-up">
+                Find quick answers to the most common questions about buying, selling, and visiting properties.
+            </p>
+
+            <div class="faq-accordion">
+
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        How do I schedule a site visit?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            You can schedule a site visit by calling us directly, filling out the contact form,
+                            or sending a WhatsApp message. Our team will confirm your preferred date and time.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        Do you assist with home loans?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes, we provide complete home loan assistance through partnered banks like HDFC,
+                            SBI, LIC, Axis Bank, and ICICI with simplified documentation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        What documents are required for booking a property?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            You will need basic KYC documents such as Aadhar card, PAN card, passport-size
+                            photos, and proof of income if applying for a loan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        Are the properties legally verified?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes. All our properties undergo strict legal verification including patta,
+                            chitta, EC, and DTCP/RERA approvals to ensure safe investments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        Do you offer free property consultation?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Absolutely! We offer free consultation to help you choose the right property
+                            based on your budget, location, and requirements.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- section Map -->
+
+    <section class="contact-map">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Company About -->
+            <div class="footer-about">
+                <img src="./image/logo.webp" alt="Real Estate Logo" class="comlogo">
+                <p>
+                    Your trusted real estate partner for luxury homes, commercial spaces, and prime property
+                    investments. We help you find the perfect property with transparency and expert guidance.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./properties.html">Properties</a></li>
+                    <li><a href="./index.html#agent">Agents</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="footer-support">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="./index.html#property">Properties</a></li>
+                    <li><a href="./service.html#categories">Categories</a></li>
+                    <li><a href="./service.html#process">Process</a></li>
+                    <li><a href="./properties.html#details">Property Details</a></li>
+                    <li><a href="./about.html#who">Who We Are</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> info@Stacklyrealestate.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Address:</strong> 21 Prime Residency Road, Salem, India</p>
+
+                <div class="social-icon">
+                    <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                    <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Stackly Real Estate. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach(item => {
+            item.querySelector(".faq-question").addEventListener("click", () => {
+                item.classList.toggle("open");
+            });
+        });
+    </script>
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Dashboard</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .header {
+            width: 100%;
+            background: #0d1625;
+            padding: 15px 5%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 200;
+            height: 80px;
+        }
+
+
+        .header nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .logo img {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            gap: 25px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #00aaff;
+        }
+
+
+        .loginbtn {
+            background: #007bff;
+            border: none;
+            padding: 3px 18px;
+            color: #fff;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .loginbtn:hover {
+            background: #005fcc;
+            transform: scale(1.05);
+        }
+
+
+        .menu-icon {
+            display: none;
+            font-size: 28px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .menu-icon {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: -660px;
+                left: 0;
+                width: 100%;
+                background: #0d1625;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                padding: 40px 0 30px 0;
+                transition: 0.4s ease;
+                box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+            }
+
+            .nav-links.active {
+                top: 60px;
+            }
+
+            .nav-links li a {
+                font-size: 18px;
+            }
+
+            .loginbtn {
+                font-size: 18px;
+                padding: 10px 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo img {
+                width: 130px;
+            }
+
+            .nav-links li a {
+                font-size: 17px;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 100px;
+        }
+
+        /* TOP CARDS */
+        .top-cards {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 180px;
+            background: #fff;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        /* GRID SECTION */
+        .charts-grid {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .chart-box,
+        .table-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+        }
+
+        .bottom-grid {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        /* MOBILE VIEW */
+        @media (max-width: 900px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bottom-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card h2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 10px;
+            }
+
+            .top-cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+
+        /* Footer Section */
+        .footer {
+            background: #0d1b2a;
+            color: #ffffff;
+            padding-top: 60px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 0 8%;
+        }
+
+        /* About Section */
+        .footer-about {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .footer-about img {
+            width: 160px;
+            margin-bottom: 15px;
+        }
+
+        .footer-about p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #dfe6ee;
+            max-width: 320px;
+        }
+
+
+        .footer h4 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ffcc66;
+            font-weight: 600;
+        }
+
+
+        .footer-links,
+        .footer-support {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-links ul,
+        .footer-support ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li,
+        .footer-support li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a,
+        .footer-support a {
+            color: #dfe6ee;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover,
+        .footer-support a:hover {
+            color: #ffcc66;
+            padding-left: 5px;
+        }
+
+
+        .footer-contact {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .footer-contact p {
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #dfe6ee;
+        }
+
+        .social-icon {
+            margin-top: 10px;
+        }
+
+        .social-icon a {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 18px;
+            color: #dfe6ee;
+            background: rgba(13, 6, 230, 0.1);
+            padding: 10px 12px;
+            border-radius: 50%;
+            transition: 0.3s ease;
+        }
+
+        .social-icon a:hover {
+            background: #ffcc66;
+            color: #0d1b2a;
+        }
+
+
+        .footer-bottom {
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 40px;
+            background: #0a1622;
+            font-size: 14px;
+            color: #c8d2dc;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-about p {
+                max-width: 100%;
+            }
+
+            .social-icon a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href=""><img src="./image/logo.webp" alt="company logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./home2.html">Home</a></li>
+                <li><a href="./about2.css">About</a></li>
+                <li><a href="./service2.html">Service</a></li>
+                <li><a href="./properties2.html">Properties</a></li>
+                <li><a href="./blog2.html">Blog</a></li>
+                <li><a href="./dashboard2.html">Dashboard</a></li>
+                <li><a href="./contact2.html">Contact</a></li>
+                <a href="./login.html"><button class="loginbtn">LogIn</button></a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- TOP CARDS -->
+    <section class="top-cards">
+        <div class="card">
+            <h2>12,540</h2>
+            <p>Total Properties</p>
+        </div>
+        <div class="card">
+            <h2>7,842</h2>
+            <p>Total Sold</p>
+        </div>
+        <div class="card">
+            <h2>$ 145,800</h2>
+            <p>Avg Property Price</p>
+        </div>
+        <div class="card">
+            <h2>38</h2>
+            <p>Agents Available</p>
+        </div>
+        <div class="card">
+            <h2>684</h2>
+            <p>New Listings</p>
+        </div>
+    </section>
+
+    <section class="charts-grid">
+        <div class="chart-box">
+            <h3>Sales Trend (Weekly)</h3>
+            <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Property Types Distribution</h3>
+            <canvas id="donutChart"></canvas>
+        </div>
+    </section>
+
+    <section class="bottom-grid">
+
+        <div class="table-box">
+            <h3>Listings By City</h3>
+            <table>
+                <tr>
+                    <th>City</th>
+                    <th>Residential</th>
+                    <th>Commercial</th>
+                </tr>
+                <tr>
+                    <td>Chennai</td>
+                    <td>4,712</td>
+                    <td>2,310</td>
+                </tr>
+                <tr>
+                    <td>Bangalore</td>
+                    <td>5,289</td>
+                    <td>2,912</td>
+                </tr>
+                <tr>
+                    <td>Hyderabad</td>
+                    <td>3,645</td>
+                    <td>1,840</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="chart-box">
+            <h3>Avg Price by City</h3>
+            <canvas id="horizontalChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Customer Satisfaction</h3>
+            <canvas id="ratingChart"></canvas>
+        </div>
+
+    </section>
+
+    
+
+    <script>
+        // BAR CHART
+        new Chart(document.getElementById("barChart"), {
+            type: "bar",
+            data: {
+                labels: ["W42", "W43", "W44", "W45", "W46", "W47"],
+                datasets: [
+                    {
+                        label: "Properties Sold",
+                        data: [210, 260, 300, 240, 310, 280],
+                        backgroundColor: "#4e73df"
+                    },
+                    {
+                        label: "New Listings",
+                        data: [320, 350, 330, 390, 420, 410],
+                        backgroundColor: "#1cc88a"
+                    }
+                ]
+            },
+            options: { responsive: true }
+        });
+
+        // DONUT CHART
+        new Chart(document.getElementById("donutChart"), {
+            type: "doughnut",
+            data: {
+                labels: ["Apartment", "Villa", "Commercial"],
+                datasets: [{
+                    data: [55, 28, 17],
+                    backgroundColor: ["#4e73df", "#36b9cc", "#f6c23e"]
+                }]
+            },
+            options: {
+                cutout: "70%"
+            }
+        });
+
+        // HORIZONTAL BAR
+        new Chart(document.getElementById("horizontalChart"), {
+            type: "bar",
+            data: {
+                labels: ["Chennai", "Bangalore", "Hyderabad"],
+                datasets: [{
+                    data: [62000, 75000, 69000],
+                    backgroundColor: ["#1cc88a", "#4e73df", "#36b9cc"]
+                }]
+            },
+            options: {
+                indexAxis: "y",
+                responsive: true
+            }
+        });
+
+        // RATING CHART
+        new Chart(document.getElementById("ratingChart"), {
+            type: "bar",
+            data: {
+                labels: ["Excellent", "Good", "Average", "Poor"],
+                datasets: [{
+                    data: [60, 25, 10, 5],
+                    backgroundColor: ["#4e73df"]
+                }]
+            },
+            options: { responsive: true }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
