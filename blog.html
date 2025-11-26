@@ -24,9 +24,9 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./service.html">Service</a></li>
-        <li><a href="./project.html">Properties</a></li>
+        <li><a href="./properties.html">Properties</a></li>
         <li><a href="./blog.html">Blog</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
         <li><a href="./contact.html">Contact</a></li>
         <a href="./login.html"><button class="loginbtn">LogIn</button></a>
       </ul>
@@ -175,6 +175,12 @@
     </main>
   </div>
 
+  <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
 
   <style>
     * {
@@ -263,13 +269,13 @@
 
       .nav-links {
         position: absolute;
-        top: -550px;
+        top: -600px;
         left: 0;
         width: 100%;
         background: #0d1625;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
         padding: 40px 0 30px 0;
         transition: 0.4s ease;
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
