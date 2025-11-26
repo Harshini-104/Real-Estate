@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -43,8 +51,8 @@
     <div class="about-hero-overlay"></div>
 
     <div class="about-hero-content">
-        <h1 data-aos="zoom-in">About Our Real Estate</h1>
-        <p data-aos="zoom-in">
+        <h1 data-aos="zoom-in" data-aos="zoom-in">About Our Real Estate</h1>
+        <p data-aos="zoom-in" data-aos="zoom-in">
             We provide premium real estate solutions designed to help individuals and businesses find 
             the perfect property. From residential homes and luxury apartments to commercial spaces and 
             investment-ready land, we ensure transparent processes, trusted guidance, and long-term value 
@@ -254,7 +262,7 @@
 />
 
 <section class="testimonials">
-    <h2 class="section-title">What Our Clients Say</h2>
+    <h2 class="section-title" data-aos="zoom-in">What Our Clients Say</h2>
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -369,7 +377,15 @@
     });
 </script>
 
-
+ <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
+    </script>
 
 </body>
 

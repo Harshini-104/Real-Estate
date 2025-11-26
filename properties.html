@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <link rel="stylesheet" href="./properties.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- header section -->
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <a href=""><img src="./image/logo.webp" alt="company logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Service</a></li>
+        <li><a href="./project.html">Properties</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <a href="./login.html"><button class="loginbtn">LogIn</button></a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+  </header>
+  
+<!-- section hero -->
+
+<section class="property-hero">
+    <div class="property-hero-overlay"></div>
+
+    <div class="property-hero-content">
+        <h1>Find Your Dream Property</h1>
+        <p>Explore premium apartments, villas, commercial spaces and more across top locations.</p>
+
+        
+    </div>
+</section>
+
+
+<!-- section search -->
+
+<section class="property-search-list">
+
+    <!-- SEARCH BOX -->
+    <div class="property-search-input">
+        <input type="text" id="propertySearch" placeholder="Search property by location or name..." onkeyup="filterProperties()">
+    </div>
+
+    <!-- PROPERTY CARDS -->
+    <div class="property-card-container" id="propertyCardContainer">
+
+        <!-- CARD 1 -->
+        <div class="property-card" data-title="Luxury 3BHK Apartment" data-location="Coimbatore">
+            <img src="./image/apartment.webp" alt="">
+            <h3>Luxury 3BHK Apartment</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Coimbatore</p>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 85,00,000</p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="property-card" data-title="Premium 2BHK Flat" data-location="Chennai">
+            <img src="./image/commercial.shop.webp" alt="">
+            <h3>Premium 2BHK Flat</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Chennai</p>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 62,00,000</p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="property-card" data-title="4BHK Gated Villa" data-location="ECR Chennai">
+            <img src="./image/eco-friendly.webp" alt="">
+            <h3>4BHK Gated Villa</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> ECR Chennai</p>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 1,65,00,000</p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="property-card" data-title="Compact Studio Apartment" data-location="Bangalore">
+            <img src="./image/family.apartment.webp" alt="">
+            <h3>Compact Studio Apartment</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Bangalore</p>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 32,00,000</p>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="property-card" data-title="Modern 3BHK Townhouse" data-location="Hyderabad">
+            <img src="./image/forest.webp" alt="">
+            <h3>Modern 3BHK Townhouse</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 95,00,000</p>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="property-card" data-title="Luxury Penthouse" data-location="Mumbai">
+            <img src="./image/glof.webp" alt="">
+            <h3>Luxury Penthouse</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Mumbai</p>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 2,10,00,000</p>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="property-card" data-title="Beachside Villa" data-location="Goa">
+            <img src="./image/home2.webp" alt="">
+            <h3>Beachside Villa</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Goa</p>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 1,90,00,000</p>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="property-card" data-title="Budget 1BHK Flat" data-location="Madurai">
+            <img src="./image/home3.webp" alt="">
+            <h3>Budget 1BHK Flat</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Madurai</p>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 25,00,000</p>
+        </div>
+
+        
+
+    </div>
+</section>
+
+<script>
+function filterProperties() {
+    let input = document.getElementById("propertySearch").value.toLowerCase();
+    let cards = document.querySelectorAll(".property-card");
+
+    cards.forEach(card => {
+        let title = card.getAttribute("data-title").toLowerCase();
+        let location = card.getAttribute("data-location").toLowerCase();
+
+        if (title.includes(input) || location.includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+
+  
+
+  
+    <section class="property-section">
+    <div class="property-container">
+
+        <!-- LEFT SIDE -->
+        <div class="property-left">
+            <!-- Main Image -->
+            <div class="main-image">
+                <img id="mainDisplay" src="./image/apartment.webp" alt="Property">
+            </div>
+
+            <!-- Thumbnail Gallery -->
+            <div class="thumbnail-gallery">
+                <img src="./image/compact.webp" onclick="changeImage(this.src)" alt="">
+                <img src="./image/family.apartment.webp" onclick="changeImage(this.src)" alt="">
+                <img src="./image/glof.webp" onclick="changeImage(this.src)" alt="">
+                <img src="./image/home1.webp" onclick="changeImage(this.src)" alt="">
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="property-right">
+            <h2 class="property-title">Luxury 3BHK Apartment</h2>
+
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 85,00,000</p>
+
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p>
+
+            <p class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                (4.0 Rating)
+            </p>
+
+            <p class="desc">
+                Spacious and beautifully designed 3BHK apartment with modern amenities,
+                excellent ventilation, and prime locality near schools, hospitals, and malls.
+            </p>
+
+            <ul class="features">
+                <li><i class="fa-solid fa-check"></i> 3 Bedrooms</li>
+                <li><i class="fa-solid fa-check"></i> 2 Bathrooms</li>
+                <li><i class="fa-solid fa-check"></i> Covered Car Parking</li>
+                <li><i class="fa-solid fa-check"></i> 24/7 Security</li>
+            </ul>
+
+            <button class="contact-btn">Contact Agent</button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="property-section">
+    <div class="property-container reverse">
+
+        <!-- LEFT SIDE (DETAILS) -->
+        <div class="property-right">
+            <h2 class="property-title">Luxury 3BHK Apartment</h2>
+
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 85,00,000</p>
+
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p>
+
+            <p class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                (4.0 Rating)
+            </p>
+
+            <p class="desc">
+                Spacious and beautifully designed 3BHK apartment with modern amenities,
+                excellent ventilation, and prime locality near schools, hospitals, and malls.
+            </p>
+
+            <ul class="features">
+                <li><i class="fa-solid fa-check"></i> 3 Bedrooms</li>
+                <li><i class="fa-solid fa-check"></i> 2 Bathrooms</li>
+                <li><i class="fa-solid fa-check"></i> Covered Car Parking</li>
+                <li><i class="fa-solid fa-check"></i> 24/7 Security</li>
+            </ul>
+
+            <button class="contact-btn">Contact Agent</button>
+        </div>
+
+        <!-- RIGHT SIDE (IMAGES) -->
+        <div class="property-left">
+            <!-- Main Image -->
+            <div class="main-image">
+                <img id="mainDisplayRight" src="./image/apartment.webp" alt="Property">
+            </div>
+
+            <!-- Thumbnail Gallery -->
+            <div class="thumbnail-gallery">
+                <img src="./image/compact.webp" onclick="changeImageRight(this.src)" alt="">
+                <img src="./image/home2.webp" onclick="changeImageRight(this.src)" alt="">
+                <img src="./image/home3.webp" onclick="changeImageRight(this.src)" alt="">
+                <img src="./image/home4.webp" onclick="changeImageRight(this.src)" alt="">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    function changeImageRight(src) {
+        document.getElementById("mainDisplayRight").src = src;
+    }
+</script>
+
+
+<section class="property-section">
+    <div class="property-container">
+
+        <!-- LEFT -->
+        <div class="property-left">
+            <!-- Main Image -->
+            <div class="main-image">
+                <img id="mainDisplay2" src="./image/apartment.webp" alt="Luxury Villa">
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="thumbnail-gallery">
+                <img src="./image/eco-friendly.webp" onclick="changeImage2(this.src)" alt="">
+                <img src="./image/furnished duplex.webp" onclick="changeImage2(this.src)" alt="">
+                <img src="./image/home1.webp" onclick="changeImage2(this.src)" alt="">
+                <img src="./image/family-villa.webp" onclick="changeImage2(this.src)" alt="">
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="property-right">
+            <h2 class="property-title">Premium 4BHK Gated Villa</h2>
+
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 1,65,00,000</p>
+
+            <p class="location"><i class="fa-solid fa-location-dot"></i> ECR Road, Chennai</p>
+
+            <p class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                (3.8 Rating)
+            </p>
+
+            <p class="desc">
+                A luxurious and spacious 4BHK villa located in a premium gated community with
+                private garden, modular kitchen, and premium interiors. Close to the beach,
+                international schools, and hospitals.
+            </p>
+
+            <ul class="features">
+                <li><i class="fa-solid fa-check"></i> 4 Bedrooms + Private Balcony</li>
+                <li><i class="fa-solid fa-check"></i> Home Theater Room</li>
+                <li><i class="fa-solid fa-check"></i> Private Garden Area</li>
+                <li><i class="fa-solid fa-check"></i> Smart Home Automation</li>
+                <li><i class="fa-solid fa-check"></i> 24/7 CCTV & Security</li>
+                <li><i class="fa-solid fa-check"></i> 2 Covered Car Parking</li>
+            </ul>
+
+            <button class="contact-btn">Schedule a Visit</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    function changeImage2(src) {
+        document.getElementById("mainDisplay2").src = src;
+    }
+</script>
+
+<section class="property-section">
+    <div class="property-container reverse">
+
+        <!-- LEFT SIDE (DETAILS) -->
+        <div class="property-right">
+            <h2 class="property-title">Premium 2BHK City View Apartment</h2>
+
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 62,00,000</p>
+
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Anna Nagar, Chennai</p>
+
+            <p class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                (3.5 Rating)
+            </p>
+
+            <p class="desc">
+                A beautifully designed 2BHK apartment with an excellent city view,
+                located in the heart of Anna Nagar. Close proximity to metro stations,
+                shopping malls, and top-rated schools.
+            </p>
+
+            <ul class="features">
+                <li><i class="fa-solid fa-check"></i> 2 Spacious Bedrooms</li>
+                <li><i class="fa-solid fa-check"></i> Modular Kitchen</li>
+                <li><i class="fa-solid fa-check"></i> Fully Ventilated Balcony</li>
+                <li><i class="fa-solid fa-check"></i> Reserved Car Parking</li>
+                <li><i class="fa-solid fa-check"></i> 24/7 Power Backup</li>
+            </ul>
+
+            <button class="contact-btn">Enquire Now</button>
+        </div>
+
+        <!-- RIGHT SIDE (IMAGES) -->
+        <div class="property-left">
+            <!-- Main Image -->
+            <div class="main-image">
+                <img id="mainDisplayNew" src="./image/studio-apartment.webp" alt="Property">
+            </div>
+
+            <!-- Thumbnail Gallery -->
+            <div class="thumbnail-gallery">
+                <img src="./image/penthouse.webp" onclick="changeImageNew(this.src)" alt="">
+                <img src="./image/oceanvilla.webp" onclick="changeImageNew(this.src)" alt="">
+                <img src="./image/family-villa.webp" onclick="changeImageNew(this.src)" alt="">
+                <img src="./image/luxury-villa.webp" onclick="changeImageNew(this.src)" alt="">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    function changeImageNew(src) {
+        document.getElementById("mainDisplayNew").src = src;
+    }
+</script>
+
+
+
+<script>
+    function changeImage(src) {
+        document.getElementById("mainDisplay").src = src;
+    }
+</script>
+
+</body>
+</html>

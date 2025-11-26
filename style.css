@@ -84,13 +84,13 @@
 
     .nav-links {
         position: absolute;
-        top: -550px; 
+        top: -600px; 
         left: 0;
         width: 100%;
         background: #0d1625;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
         padding: 40px 0 30px 0;
         transition: 0.4s ease;
         box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
@@ -825,6 +825,68 @@
     font-size: 14px;
     color: #444;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .rent-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .rent-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .latest-rent {
+        padding: 50px 5%;
+    }
+
+    .rent-title {
+        font-size: 28px;
+    }
+
+    .rent-card img {
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .rent-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rent-card img {
+        height: 180px;
+    }
+
+    .rent-features {
+        gap: 10px;
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .rent-info h3 {
+        font-size: 16px;
+    }
+
+    .rent-location {
+        font-size: 13px;
+    }
+
+    .rent-tag {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}
+
 
 
 /* section statistics */
