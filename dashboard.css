@@ -120,131 +120,173 @@
     }
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+/* section dashboard */
+
+.realestate-dashboard {
+    width: 100%;
+    padding: 90px;
+    background: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background: #0e1630;
-    color: #fff;
-    padding: 20px;
+.dashboard-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
-.dashboard {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding-top: 80px;
-}
 
 .card {
-    background: #1b2345;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    flex: 1;
+    margin: 10px;
+    min-width: 220px;
+    transition: 0.3s ease;
 }
 
-.card h3 {
-    font-size: 18px;
+.card:hover {
+    transform: translateY(-6px);
+}
+
+
+.chart-card {
+    position: relative;
+}
+
+.chart-card h3 {
     margin-bottom: 10px;
 }
 
-.number {
-    font-size: 34px;
-    font-weight: 700;
-}
-
-.number.large {
-    font-size: 46px;
-}
-
-p {
-    opacity: 0.8;
-    margin-top: 4px;
-}
-
-.small-box {
-    margin-top: 10px;
-    padding: 6px 10px;
-    border-radius: 6px;
-    width: fit-content;
-    font-size: 13px;
-}
-
-.orange {
-    background: #ff9e48;
-    color: #000;
-}
-
-.list {
-    margin-top: 10px;
-    list-style: none;
+.chart-card .percentage {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #00cc66;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 12px;
     font-size: 14px;
 }
 
-.list li {
-    padding: 6px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
 
-.status {
-    font-size: 28px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.status.up {
-    color: #7dff7c;
-}
-
-.bar {
-    width: 100%;
-    height: 120px;
-    background: #2c3459;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-
-.progress-section p {
+.efficiency-card .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #4b8bff;
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
 }
 
-.progress {
-    width: 100%;
-    height: 6px;
-    background: #35406d;
+.efficiency-card h1 {
+    font-size: 48px;
+}
+
+.details-btn {
+    padding: 10px 20px;
+    background: #4b8bff;
+    color: #fff;
+    border: none;
     border-radius: 6px;
-    margin-bottom: 10px;
-}
-
-.progress span {
+    cursor: pointer;
+    margin: 0 auto;
     display: block;
-    height: 6px;
-    background: #5bb9ff;
-    border-radius: 6px;
+    transition: 0.3s;
 }
 
-.big {
-    grid-column: span 2;
+.details-btn:hover {
+    background: #3a6dde;
 }
 
-.success {
-    margin-top: 10px;
-    color: #4cff8f;
-}
 
-canvas {
+.maintenance-card img {
+    width: 100%;
+    border-radius: 10px;
     margin-top: 15px;
 }
 
-canvas {
-    margin-top: 15px;
+
+.small-card h2 {
+    font-size: 32px;
+    margin: 10px 0;
+    font-weight: 700;
 }
+
+
+.funnel-card ul {
+    padding-left: 20px;
+}
+
+.funnel-card ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 1024px) {
+    .dashboard-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .efficiency-card .circle {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .realestate-dashboard {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .dashboard-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .efficiency-card .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .chart-card .percentage {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .efficiency-card h1 {
+        font-size: 36px;
+    }
+
+    .small-card h2 {
+        font-size: 26px;
+    }
+}
+
 
 /* Footer Section */
 .footer {
