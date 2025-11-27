@@ -253,7 +253,7 @@
 
 .featured { left: 10px; background: #2ecc71; }
 .residential { left: 100px; background: #3498db; }
-.active { left: 210px; background: #f39c12; }
+.act { left: 210px; background: #f39c12; }
 
 .property-details {
   width: 50%;
@@ -331,10 +331,130 @@
   cursor: pointer;
 }
 
-.active-dot {
+.act-dot {
   background: #2980b9;
 }
 
+
+@media (max-width: 1024px) {
+  .featured-properties h2 {
+    font-size: 28px;
+  }
+
+  .property-image img {
+    height: 350px;
+  }
+
+  .slide {
+    gap: 15px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .property-details h3 {
+    font-size: 20px;
+  }
+
+  .property-details h1 {
+    font-size: 18px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .featured-properties h2 {
+    font-size: 26px;
+  }
+
+  .slide {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .property-image,
+  .property-details {
+    width: 100%;
+  }
+
+  .property-image img {
+    height: 300px;
+  }
+
+ 
+  .featured { left: 10px; top: 10px; }
+  .residential { left: 90px; top: 10px; }
+  .act { left: 190px; top: 10px; }
+
+  .property-details {
+    padding-right: 0;
+  }
+
+  .property-details h3 {
+    font-size: 18px;
+  }
+
+  .property-details h1 {
+    font-size: 16px;
+  }
+
+  .location,
+  .description {
+    font-size: 13px;
+  }
+
+  .left { left: -20px; }
+  .right { right: -20px; }
+}
+
+
+
+@media (max-width: 480px) {
+  .featured-properties h2 {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .slide {
+    padding: 15px;
+  }
+
+  .property-image img {
+    height: 240px;
+  }
+
+  .featured { left: 10px; }
+  .residential { left: 80px; }
+  .act { left: 160px; }
+
+  .property-details h3 {
+    font-size: 17px;
+  }
+
+  .property-details h1 {
+    font-size: 15px;
+  }
+
+  .property-icons span {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+
+  .left { left: -10px; }
+  .right { right: -10px; }
+
+  .dot {
+    height: 8px;
+    width: 8px;
+  }
+}
 
 /* section properties */
 

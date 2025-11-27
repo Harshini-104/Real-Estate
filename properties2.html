@@ -81,7 +81,7 @@
         <div class="property-image">
           <span class="tag featured">Featured</span>
           <span class="tag residential">Residential</span>
-          <span class="tag active">Active</span>
+          <span class="tag act">Active</span>
 
           <img src="./image/compact.webp" alt="Property">
         </div>
@@ -115,7 +115,7 @@
         <div class="property-image">
           <span class="tag featured">Featured</span>
           <span class="tag residential">Residential</span>
-          <span class="tag active">Active</span>
+          <span class="tag act">Active</span>
 
           <img src="./image/apart6.webp" alt="Property">
         </div>
@@ -336,11 +336,11 @@ function showSlide(n) {
   }
 
   for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active-dot");
+    dots[i].classList.remove("act-dot");
   }
 
   slides[slideIndex - 1].style.display = "flex";
-  dots[slideIndex - 1].classList.add("active-dot");
+  dots[slideIndex - 1].classList.add("act-dot");
 }
 </script>
 
