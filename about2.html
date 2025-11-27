@@ -2,142 +2,321 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="./about2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="./about2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <!-- header section -->
-    <header class="header">
-        <nav>
-            <div class="logo">
-                <a href=""><img src="./image/logo.webp" alt="company logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="./home2.html">Home</a></li>
-                <li><a href="./about2.html">About</a></li>
-                <li><a href="./service2.html">Service</a></li>
-                <li><a href="./properties2.html">Properties</a></li>
-                <li><a href="./blog2.html">Blog</a></li>
-                <li><a href="./dashboard2.html">Dashboard</a></li>
-                <li><a href="./contact2.html">Contact</a></li>
-                <a href="./login.html"><button class="loginbtn">LogIn</button></a>
-            </ul>
-            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
-        </nav>
+  <!-- header section -->
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <a href=""><img src="./image/logo.webp" alt="company logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./home2.html">Home</a></li>
+        <li><a href="./about2.html">About</a></li>
+        <!-- <li><a href="./service2.html">Service</a></li> -->
+        <li><a href="./properties2.html">Properties</a></li>
+        <li><a href="./blog2.html">Blog</a></li>
+        <li><a href="./dashboard2.html">Dashboard</a></li>
+        <li><a href="./contact2.html">Contact</a></li>
+        <a href="./login.html"><button class="loginbtn">LogIn</button></a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
 
-    </header>
+  </header>
 
 
-    <!-- section hero -->
+  <section class="abouthero">
+    <div class="abouthero-overlay"></div>
 
-    <section class="about-hero">
-    <div class="about-hero-content">
-        <h1>About Our Real Estate Company</h1>
-        <p>We help you find the perfect home with trusted service, expert guidance, and a commitment to quality living spaces.</p>
-        <a href="#learn-more" class="hero-btn">Explore Our Journey</a>
+    <div class="abouthero-content" data-aos="fade-up">
+      <h1>About Our Real Estate Company</h1>
+      <p>
+        With years of trusted experience, we provide exceptional real estate
+        services that help individuals and families find the perfect property.
+        Our mission is to bring transparency, professionalism, and personalized
+        support to every client we serve.
+      </p>
+      
     </div>
+  </section>
 
-    <div class="about-hero-image">
-        <img src="./image/luxury-villa.webp" alt="Real Estate About">
-    </div>
+
+
+
+
+
+  <!-- section hero -->
+
+  <section class="about-hero">
+  <div class="about-hero-image">
+    <img src="./image/family.apartment.webp" alt="Real Estate About" data-aos="zoom-in">
+  </div>
+
+  <div class="about-hero-content" data-aos="zoom-in">
+    <h1>About Our Real Estate Company</h1>
+    <p>
+      We help you find the perfect home with trusted service, expert guidance,
+      and a commitment to quality living spaces.
+    </p>
+
+    <p>With years of trusted experience, we provide exceptional real estate
+        services that help individuals and families find the perfect property.
+        Our mission is to bring transparency, professionalism, and personalized
+        support to every client we serve.</p>
+  </div>
 </section>
 
 
-    <!-- footer section -->
+  <!-- section about -->
 
-    <footer class="footer">
-        <div class="footer-container">
+  <main class="hero">
+    <div class="hero-inner">
 
-            <!-- Company About -->
-            <div class="footer-about">
-                <img src="./image/logo.webp" alt="Real Estate Logo" class="comlogo">
-                <p>
-                    Your trusted real estate partner for luxury homes, commercial spaces, and prime property
-                    investments. We help you find the perfect property with transparency and expert guidance.
-                </p>
-            </div>
+      <!-- Left Content -->
+      <section class="hero-left" aria-labelledby="team-heading">
 
-            <!-- Quick Links -->
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./properties.html">Properties</a></li>
-                    <li><a href="./index.html#agent">Agents</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
+        <h2 class="headline" data-aos="fade-up">The Finest in Luxury Real Estate</h2>
 
-            <!-- Support -->
-            <div class="footer-support">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="./index.html#property">Properties</a></li>
-                    <li><a href="./service.html#categories">Categories</a></li>
-                    <li><a href="./service.html#process">Process</a></li>
-                    <li><a href="./properties.html#details">Property Details</a></li>
-                    <li><a href="./about.html#who">Who We Are</a></li>
-                </ul>
-            </div>
+        <p class="lead" data-aos="fade-up">
+          With over <strong>$2 Billion</strong> in sales, Sam Daniels Team is one of the region’s premier luxury
+          brokerages.
+          Our unmatched results, deep market expertise, and unwavering dedication place us among the
+          <strong>Top 6 agencies in Seattle</strong>.
+        </p>
 
-            <!-- Contact -->
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p><strong>Email:</strong> info@Stacklyrealestate.com</p>
-                <p><strong>Phone:</strong> +91 98765 43210</p>
-                <p><strong>Address:</strong> 21 Prime Residency Road, Salem, India</p>
+        <p data-aos="fade-up">
+          With years of experience, a prestigious property portfolio, celebrity clientele, and unmatched market
+          knowledge,
+          the Sam Daniels Team delivers sophisticated service and outstanding outcomes.
+        </p>
 
-                <div class="social-icon">
-                    <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="./error.html"><i class="fab fa-instagram"></i></a>
-                    <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+        <ul class="highlights">
+          <li data-aos="fade-up"><strong>Luxury specialists</strong> — estates, waterfronts, historic homes</li>
+          <li data-aos="fade-up"><strong>White-glove service</strong> for high-net-worth clients</li>
+          <li data-aos="fade-up"><strong>Strategic marketing</strong> and global outreach</li>
+        </ul>
 
+
+
+
+      </section>
+
+      <!-- Right Image -->
+      <aside class="hero-right">
+        <img src="./image/luxury-villa.webp" alt="Exterior of a luxury waterfront estate with modern architecture" />
+      </aside>
+
+    </div>
+  </main>
+
+
+  <!-- section property -->
+
+
+
+  <!-- section awards -->
+
+  <section class="awards-section">
+    <div class="awards-header">
+      <h2  data-aos="zoom-in">Our Awards & Recognitions</h2>
+      <p  data-aos="zoom-in">Honoring excellence in luxury real estate and outstanding client service.</p>
+    </div>
+
+    <div class="awards-grid">
+
+      <div class="award-card"  data-aos="zoom-in">
+        <i class="fas fa-award"></i>
+        <h4>Top 6 Luxury Agency</h4>
+        <p>Ranked among the elite luxury real estate agencies in Seattle for outstanding performance.</p>
+      </div>
+
+      <div class="award-card"  data-aos="zoom-in">
+        <i class="fas fa-trophy"></i>
+        <h4>Corcoran President's Council</h4>
+        <p>Recognized for exceptional sales results and leadership in the real estate industry.</p>
+      </div>
+
+      <div class="award-card"  data-aos="zoom-in">
+        <i class="fas fa-medal"></i>
+        <h4>Excellence in Client Service</h4>
+        <p>Awarded for delivering white-glove service and record-breaking customer satisfaction.</p>
+      </div>
+
+      <div class="award-card"  data-aos="zoom-in">
+        <i class="fas fa-crown"></i>
+        <h4>Luxury Marketing Leader</h4>
+        <p>Honored for innovative marketing strategies and high-end property exposure.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- section testimonial -->
+
+  <section class="testimonials-section">
+    <div class="testimonials-header">
+      <h2  data-aos="zoom-in">What Our Clients Say</h2>
+      <p  data-aos="zoom-in">Trusted by luxury home buyers, investors, and high-net-worth families across Seattle.</p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card"  data-aos="zoom-in">
+        <div class="client-info">
+          <img src="./image/team1.webp" alt="Client">
+          <div>
+            <h4>Emily Carter</h4>
+            <span>Luxury Home Buyer</span>
+          </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>© 2025 Stackly Real Estate. All Rights Reserved.</p>
+        <p class="testimonial-text">
+          “The Sam Daniels Team exceeded every expectation. From private showings to negotiations,
+          their professionalism and expertise made the entire process seamless.”
+        </p>
+        <div class="rating">
+          ★★★★★
         </div>
-    </footer>
+      </div>
+
+      <div class="testimonial-card"  data-aos="zoom-in">
+        <div class="client-info">
+          <img src="./image/team6.webp" alt="Client">
+          <div>
+            <h4>Michael Foster</h4>
+            <span>Property Investor</span>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          “Their market knowledge is unmatched. They helped me secure an incredible investment
+          property and handled every detail with remarkable precision.”
+        </p>
+        <div class="rating">
+          ★★★★★
+        </div>
+      </div>
+
+      <div class="testimonial-card"  data-aos="zoom-in">
+        <div class="client-info">
+          <img src="./image/team4.webp" alt="Client">
+          <div>
+            <h4>Sophia Lane</h4>
+            <span>Seller - Waterfront Estate</span>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          “I sold my home above asking price within days. Their marketing strategy and
+          luxury staging took my property to the next level.”
+        </p>
+        <div class="rating">
+          ★★★★★
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 
 
-    <script>
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        }
-    </script>
+  <!-- footer section -->
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Company About -->
+      <div class="footer-about">
+        <img src="./image/logo.webp" alt="Real Estate Logo" class="comlogo">
+        <p>
+          Your trusted real estate partner for luxury homes, commercial spaces, and prime property
+          investments. We help you find the perfect property with transparency and expert guidance.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./properties.html">Properties</a></li>
+          <li><a href="./index.html#agent">Agents</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-support">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="./index.html#property">Properties</a></li>
+          <li><a href="./service.html#categories">Categories</a></li>
+          <li><a href="./service.html#process">Process</a></li>
+          <li><a href="./properties.html#details">Property Details</a></li>
+          <li><a href="./about.html#who">Who We Are</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Email:</strong> info@Stacklyrealestate.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> 21 Prime Residency Road, Salem, India</p>
+
+        <div class="social-icon">
+          <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="./error.html"><i class="fab fa-instagram"></i></a>
+          <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Stackly Real Estate. All Rights Reserved.</p>
+    </div>
+  </footer>
 
 
-    <script>
-        // $(document).on('ready', function () {
-        // initialization of aos
-        AOS.init({
-            duration: 650,
-            once: false,
-            mirror: true,
-        });
-    </script>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    }
+  </script>
+
+
+  <script>
+    // $(document).on('ready', function () {
+    // initialization of aos
+    AOS.init({
+      duration: 650,
+      once: false,
+      mirror: true,
+    });
+  </script>
 </body>
 
 </html>

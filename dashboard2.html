@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Dashboard</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -377,7 +385,7 @@
             <ul class="nav-links">
                 <li><a href="./home2.html">Home</a></li>
                 <li><a href="./about2.css">About</a></li>
-                <li><a href="./service2.html">Service</a></li>
+                <!-- <li><a href="./service2.html">Service</a></li> -->
                 <li><a href="./properties2.html">Properties</a></li>
                 <li><a href="./blog2.html">Blog</a></li>
                 <li><a href="./dashboard2.html">Dashboard</a></li>
@@ -394,35 +402,35 @@
 
     <!-- TOP CARDS -->
     <section class="top-cards">
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <h2>12,540</h2>
             <p>Total Properties</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <h2>7,842</h2>
             <p>Total Sold</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <h2>$ 145,800</h2>
             <p>Avg Property Price</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <h2>38</h2>
             <p>Agents Available</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <h2>684</h2>
             <p>New Listings</p>
         </div>
     </section>
 
     <section class="charts-grid">
-        <div class="chart-box">
+        <div class="chart-box" data-aos="zoom-in">
             <h3>Sales Trend (Weekly)</h3>
             <canvas id="barChart"></canvas>
         </div>
 
-        <div class="chart-box">
+        <div class="chart-box" data-aos="zoom-in">
             <h3>Property Types Distribution</h3>
             <canvas id="donutChart"></canvas>
         </div>
@@ -430,7 +438,7 @@
 
     <section class="bottom-grid">
 
-        <div class="table-box">
+        <div class="table-box" data-aos="zoom-in">
             <h3>Listings By City</h3>
             <table>
                 <tr>
@@ -456,19 +464,19 @@
             </table>
         </div>
 
-        <div class="chart-box">
+        <div class="chart-box" data-aos="zoom-in">
             <h3>Avg Price by City</h3>
             <canvas id="horizontalChart"></canvas>
         </div>
 
-        <div class="chart-box">
+        <div class="chart-box" data-aos="zoom-in">
             <h3>Customer Satisfaction</h3>
             <canvas id="ratingChart"></canvas>
         </div>
 
     </section>
 
-    
+
 
     <script>
         // BAR CHART
@@ -537,8 +545,21 @@
         });
     </script>
 
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 
-
+    <script>
+        // $(document).on('ready', function () {
+        // initialization of aos
+        AOS.init({
+            duration: 650,
+            once: false,
+            mirror: true,
+        });
+    </script>
 </body>
 
 </html>

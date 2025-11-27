@@ -409,7 +409,7 @@
 
 .why-choose {
   padding: 80px 5%;
-  background: #ffffff;
+  background: linear-gradient(135deg, aqua, blue, aqua, blue,aqua);
   text-align: center;
 }
 
@@ -431,7 +431,7 @@
 }
 
 .feature-box {
-  background: #fff;
+  background: linear-gradient(135deg, aqua,rgb(120, 234, 139));
   padding: 30px 20px;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);

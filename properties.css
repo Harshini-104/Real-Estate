@@ -165,9 +165,6 @@
 
 
 
-
-
-/* Responsive */
 @media (max-width: 768px) {
     .property-hero-content h1 {
         font-size: 34px;
@@ -186,6 +183,11 @@
         justify-content: center;
     }
 }
+
+
+
+
+
 
 
 /* section search */
